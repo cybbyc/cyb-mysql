@@ -1,6 +1,6 @@
 {
   "name": "cyb-mysql",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "mysql operation so esay",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
   "dependencies": {
     "mysql": "^2.15.0"
   },
-  "keywords": ["node","mysql"],
+  "keywords": [
+    "node",
+    "mysql"
+  ],
   "repository": "https://github.com/cybbyc/cyb-mysql.git"
-
 }

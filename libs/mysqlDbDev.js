@@ -9,7 +9,8 @@
 *
 * */
 const mysql = require("mysql");
-const setting = require('./setting');
+var setting = require('../../../mysqlSetting'); //文件创建在用户根目录
+
 
 //连接数据库,返回一个连接对象
 function __connect(callback) {

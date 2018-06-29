@@ -4,14 +4,23 @@ tip:
     如需使用/text/目录下的测试用例，请安装express框架---用例是基于express框架编写
     然后将数据库配置项改为有效数据库即可
 
+    用例为：/text/demo2.js
 
-/libs/setting.js中配置数据库信息
 
-安装：
+1.安装：
     npm install cyb-mysql
 
-引入：
-    const cybMysql = require('cyb-mysql');
+2.在项目根目录下创建数据库配置文件mysqlSetting.js,内容如下：
+    module.exports = {
+        host:'127.0.0.1',
+        user:'root',
+        password:'055519',
+        database:'text',
+        port:'3306'
+    }
+
+3.引入：
+    var cybMysql = require('cyb-mysql');
 
 四个接口：
 

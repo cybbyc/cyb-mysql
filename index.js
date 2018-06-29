@@ -1,2 +1,3 @@
 //导出
-module.exports = require('./libs/mysqlDbDev');
+exports.mysql = require('./libs/mysqlDbDev');
+exports.setting = require('./mysqlSetting');
