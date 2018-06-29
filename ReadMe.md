@@ -1,4 +1,4 @@
-极简地封装了mysql数据库的增删改查
+极简地封装 nodejs mysql 数据库的增删改查
 
 tip:
     如需使用/text/目录下的测试用例，请安装express框架---用例是基于express框架编写
