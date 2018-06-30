@@ -7,6 +7,15 @@ const express = require("express");
 const mysqldb = require("../libs/mysqlDbDev");
 const app = express();
 
+//配置数据库
+mysqldb.Setting({
+    host:'127.0.0.1',
+    user:'root',
+    password:'055519',
+    database:'text',
+    port:'3306'
+});
+
 app.get("/",function (req, res) {
     res.send('.11111111111111111');
 })

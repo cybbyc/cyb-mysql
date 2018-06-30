@@ -10,19 +10,31 @@ tip:
 1.安装：
     npm install cyb-mysql
 
-2.在项目根目录下创建数据库配置文件mysqlSetting.js,内容如下：
-    module.exports = {
+2.引入：
+    var cybMysql = require('cyb-mysql');
+
+3.配置数据库
+    cybMysql.Setting({
         host:'127.0.0.1',
         user:'root',
         password:'055519',
         database:'text',
         port:'3306'
-    }
+    });
 
-3.引入：
-    var cybMysql = require('cyb-mysql');
+五个接口：
 
-四个接口：
+    cybMysql.Setting(json):
+        * 参数：
+        *   json：数据库配置选项，一个对象，属性如下：
+        *       {
+                    host:'127.0.0.1',
+                    user:'root',
+                    password:'055519',
+                    database:'text',
+                    port:'3306'
+                }
+
 
     cybMysql.Insert(tablename,json,callback);
         * 参数：

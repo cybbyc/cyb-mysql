@@ -9,8 +9,11 @@
 *
 * */
 const mysql = require("mysql");
-var setting = require('../../../mysqlSetting'); //文件创建在用户根目录
 
+//数据库配置接口
+exports.Setting = function (json) {
+    setting = json;
+}
 
 //连接数据库,返回一个连接对象
 function __connect(callback) {
